@@ -6,8 +6,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name="locksys",
     version="0.1.0",
-    author="Your Name",
-    author_email="your.email@example.com",
+    author="Mark Powers",
+    author_email="mpoweru@lifsys.com",
     description="A Python library for securely retrieving API keys from 1Password",
     long_description=long_description,
     long_description_content_type="text/markdown",

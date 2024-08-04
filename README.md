@@ -1,6 +1,6 @@
 # Locksys
 
-Locksys is a Python library for securely retrieving API keys from 1Password vaults using the 1Password Connect SDK.
+Locksys is a Python library by Lifsys, Inc. for securely retrieving API keys from 1Password vaults using the 1Password Connect SDK.
 
 ## Installation
 
