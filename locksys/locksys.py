@@ -1,8 +1,24 @@
+"""
+Locksys: A Python library for securely retrieving API keys from 1Password vaults.
+
+This module provides a simple interface to retrieve API keys and other sensitive
+information from 1Password vaults using the 1Password Connect SDK.
+"""
+
 from onepasswordconnectsdk import new_client_from_environment
 from functools import lru_cache
 from typing import Optional
 
 class Locksys:
+    """
+    A class for retrieving API keys from 1Password vaults.
+
+    Attributes:
+        vault (str): The name of the 1Password vault to use (default is "API").
+        _item (Optional[str]): The name of the item to retrieve.
+        _key (Optional[str]): The name of the key to retrieve from the item.
+        result (Optional[str]): The retrieved value.
+    """
     def __init__(self, vault: str = "API"):
         self.vault = vault
         self._item: Optional[str] = None
