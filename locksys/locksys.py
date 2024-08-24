@@ -8,6 +8,10 @@ information from 1Password vaults using the 1Password Connect SDK.
 from onepasswordconnectsdk import new_client_from_environment
 from functools import lru_cache
 from typing import Optional
+import logging
+
+# Configure logging
+logging.basicConfig(level=logging.WARNING)
 
 class Locksys:
     """
